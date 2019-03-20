@@ -12,5 +12,7 @@ Dacă vrei să redirecționezi întregul site spre această pagină neagră, ada
 RewriteEngine on
 
 RewriteCond %{HTTP_HOST} ^domeniulmeu.com$ [OR]
+
 RewriteCond %{HTTP_HOST} ^www.domeniulmeu.com$
+
 RewriteRule ^/?$ "http://www.domeniulmeu.com/paginablackout.html" [R=301,L]
