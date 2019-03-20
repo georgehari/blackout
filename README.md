@@ -5,6 +5,7 @@ Pachetul conține:
 - pagina HTML cu textul în engleză
 - pagina HTML cu textul în română
 - pagina HTML cu textul bilingv
+- un banner pătrat alb-negru.
 
 Dacă vrei să redirecționezi întregul site spre această pagină neagră, urmează instrucțiunile de la:
 https://www.makeuseof.com/answers/redirect-entire-domain-webpage-htaccess/
