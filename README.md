@@ -7,5 +7,10 @@ Pachetul conține:
 - pagina HTML cu textul bilingv
 - un banner pătrat alb-negru.
 
-Dacă vrei să redirecționezi întregul site spre această pagină neagră, urmează instrucțiunile de la:
-https://www.makeuseof.com/answers/redirect-entire-domain-webpage-htaccess/
+Dacă vrei să redirecționezi întregul site spre această pagină neagră, adaugă acest cod în fișierul .htaccess și înlocuiește cu numele domeniului tău și al paginii de blackout:
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^domeniulmeu.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.domeniulmeu.com$
+RewriteRule ^/?$ "http://www.domeniulmeu.com/paginablackout.html" [R=301,L]
